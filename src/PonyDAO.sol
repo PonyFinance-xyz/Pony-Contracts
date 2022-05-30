@@ -8,7 +8,7 @@ import "openzeppelin-contracts/contracts/token/ERC20/extensions/draft-ERC20Permi
 import "openzeppelin-contracts/contracts/token/ERC20/extensions/ERC20Votes.sol";
 
 contract PonyDAO is ERC20, ERC20Snapshot, Ownable, ERC20Permit, ERC20Votes {
-    constructor() ERC20("PonyDAO", "PNY") ERC20Permit("PonyDAO") {
+    constructor() ERC20("PonyDAO", "SPNY") ERC20Permit("PonyDAO") {
         _mint(msg.sender, 100000000 * 10 ** decimals());
     }
 
