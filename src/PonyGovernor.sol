@@ -11,7 +11,7 @@ import "openzeppelin-contracts/contracts/governance/extensions/GovernorTimelockC
 contract PonyGovernor is Governor, GovernorSettings, GovernorCompatibilityBravo, GovernorVotes, GovernorVotesQuorumFraction, GovernorTimelockControl {
     constructor(IVotes _token, TimelockController _timelock)
     Governor("PonyGovernor")
-    GovernorSettings(1 /* 1 block */, 45818 /* 1 week */, 0)
+    GovernorSettings(1 /* 1 block */, 13091 /* 1 week */, 0)
     GovernorVotes(_token)
     GovernorVotesQuorumFraction(4)
     GovernorTimelockControl(_timelock)
