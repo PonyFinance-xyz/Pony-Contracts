@@ -12,7 +12,7 @@ contract PonyDAO is ERC20, ERC20Snapshot, Ownable, ERC20Permit, ERC20Votes {
         _mint(msg.sender, 1000000000 * 10 ** decimals());
     }
 
-    function snapshot(  ) public onlyOwner {
+    function snapshot() public onlyOwner {
         _snapshot();
     }
 
